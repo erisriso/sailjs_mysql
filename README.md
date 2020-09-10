@@ -1,4 +1,4 @@
-# sailsjs-mysql
+Belajar MVC React Js dengan menggunakan Sails Js dan MySQL
 
 a [Sails v1](https://sailsjs.com) application
 
