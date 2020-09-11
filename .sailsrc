@@ -1,6 +1,8 @@
 {
   "generators": {
-    "modules": {}
+    "modules": {},
+    "grunt": false,
+    "view": false
   },
   "_generatedWith": {
     "sails": "1.3.1",
