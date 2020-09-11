@@ -47,6 +47,8 @@ module.exports = {
     *                                                                          *
     ***************************************************************************/
     default: {
+      adapter: require('sails-mysql'),
+      url: 'mysql://sails_mariadb:sailsjs@localhost:3306/sails_mariadb',
       // adapter: 'sails-mysql',
       // url: 'mysql://user:password@host:port/database',
       //--------------------------------------------------------------------------
@@ -147,11 +149,12 @@ module.exports = {
     * > Be sure to use the right protocol!  ("http://" vs. "https://")         *
     *                                                                          *
     ***************************************************************************/
-    cors: {
+    //cors: {
       // allowOrigins: [
       //   'https://example.com',
       // ]
-    },
+    //},
+    csrf: false
 
   },
 
@@ -250,10 +253,9 @@ module.exports = {
     * > Be sure to use the right protocol!  ("http://" vs. "https://")         *
     *                                                                          *
     ***************************************************************************/
-    // onlyAllowOrigins: [
-    //   'https://example.com',
-    //   'https://staging.example.com',
-    // ],
+     onlyAllowOrigins: [
+      
+     ],
 
 
     /***************************************************************************

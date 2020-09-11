@@ -7,8 +7,10 @@
  * For more information on configuring custom routes, check out:
  * https://sailsjs.com/anatomy/config/routes-js
  */
+var routes_frontend = require('./routes/frontend');
 
-module.exports.routes = {
+
+module.exports.routes = Object.assign(routes_frontend.frontend),{
 
   /***************************************************************************
   *                                                                          *
