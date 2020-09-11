@@ -10,8 +10,10 @@ module.exports = {
         }
     },
     fn: async function(inputs,exits){
-        //let _default = await SVGPathSegList.helpers.getDefaultData(this.req)
-        //_default.moment = moment;
+        let _default = await SVGPathSegList.helpers.getDefaultData(this.req)
+
+        _default.webSettings = webSettings;
+        _default.moment = moment;
         return exits.success();
     }
 }
