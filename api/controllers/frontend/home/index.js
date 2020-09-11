@@ -10,7 +10,7 @@ module.exports = {
         }
     },
     fn: async function(inputs,exits){
-        let _default = await SVGPathSegList.helpers.getDefaultData(this.req)
+        let _default = await sails.helpers.getDefaultData(this.req)
 
         _default.webSettings = webSettings;
         _default.moment = moment;
