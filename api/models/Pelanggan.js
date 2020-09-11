@@ -15,7 +15,7 @@ module.exports = {
     },
     email: {
       type: 'string',
-      email: true
+      isEmail: true
     },
     alamat: {
       type: 'string'
