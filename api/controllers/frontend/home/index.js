@@ -14,6 +14,6 @@ module.exports = {
 
         _default.webSettings = webSettings;
         _default.moment = moment;
-        return exits.success();
+        return exits.success(_default);
     }
 }
